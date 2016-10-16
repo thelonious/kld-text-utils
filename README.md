@@ -1,6 +1,6 @@
 # kld-text-utils
 
-A small collection of utilities for formatting text
+A small collection of utilities for formatting text. I use these in a number of other modules, so it's convenient to have these all in one place.
 
 ## format
 
@@ -29,4 +29,39 @@ printer.printlnWithIndent('say() {').increaseIndent();
 printer.printlnWithIndent('console.log("hello")').decreaseIndent();
 printer.printlnWithIndent('}').decreaseIndent();
 printer.printlnWithIndent('}');
+```
+
+This would emit:
+
+```
+class Hello {
+	say() {
+		console.log("hello")
+	}
+}
+```
+
+## Table
+
+This class allows you to format columns and rows of text (and numbers) into a table format.
+
+```
+var table = new Table();
+
+table.headers = ["First", "Middle", "Last", "Age"];
+table.addRow(["John", "William", "Dough", 48]);
+table.addRow(["Susan", "Anita", "Bandita", 56]);
+table.addRow(["Joe", "Ernest", "Cummings", 8]);
+
+console.log(table.toString());
+```
+
+This would emit:
+
+```
+First Middle  Last     Age
+===== ======= ======== ===
+John  William Dough     48
+Susan Anita   Bandita   56
+Joe   Ernest  Cummings   8
 ```
