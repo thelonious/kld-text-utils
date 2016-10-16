@@ -1,0 +1,22 @@
+{
+  "name": "kld-text-utils",
+  "version": "0.0.1",
+  "description": "A small collection of utilities for formatting text",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/thelonious/kld-text-utils"
+  },
+  "keywords": [
+    "text",
+    "formatting"
+  ],
+  "author": "Kevin Lindsey",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
