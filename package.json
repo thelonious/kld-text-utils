@@ -1,6 +1,6 @@
 {
   "name": "kld-text-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small collection of utilities for formatting text",
   "main": "index.js",
   "scripts": {
